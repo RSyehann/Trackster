@@ -1,0 +1,82 @@
+html {
+  font-size: 16px;
+}
+
+body {
+  min-width: 570px;
+  font-family: "Work Sans", sans-serif;
+  line-height: 2.5;
+  color: rgba(74, 74, 74, 1);
+}
+
+input:focus {
+  outline: none;
+}
+
+a,
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+
+.header {
+  padding: 2.75rem 0;
+  background-color: rgba(34, 1, 63, 1);
+}
+
+.header h1 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: "Righteous", cursive;
+  color: rgba(225, 0, 171, 1);
+}
+
+.header input {
+  border-radius: 19px;
+  margin-right: .625rem;
+}
+
+.header .fa-search {
+  padding: .5rem;
+  border-radius: 19px;
+  text-align: center;
+  background-color: rgba(225, 0, 171, 1);
+  color: rgba(34, 1, 63,1);
+}
+
+.header .fa-search:hover {
+  background-color: rgba(225, 102, 204, 1);
+  cursor: pointer;
+}
+
+.attributes {
+  background-color: rgba(104, 0, 255, 1);
+  font-weight: 500;
+  color: rgba(255, 255, 255, 1);
+}
+
+.track {
+  display: flex;
+  padding: .6rem;
+  border-bottom: 1px solid rgba(204, 204, 204, 1);
+  line-height: 1;
+}
+
+.track:hover {
+  background-color: rgba(239, 237, 242, 1);
+}
+
+.track div {
+  display: flex;
+  align-items: center;
+}
+
+.play-button a {
+  display: flex;
+  align-items: center;
+  color: rgba(255, 0, 171, 1);
+}
+
+.play-button a:hover {
+  color: rgba(255, 102, 204, 1);
+}
