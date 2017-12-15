@@ -23,7 +23,7 @@ Trackster.renderTracks = function(tracks) {
       '    </a>' +
       '  </div>' +
       '  <div class="col-xs-4">' + track.name + '</div>' +
-      '  <div class="col-xs-2">' + track.artist + '</div' +
+      '  <div class="col-xs-2">' + track.artist + '</div>' +
       '  <div class="col-xs-2"><img src="' + mediumAlbumArt + '"/></div>' +
       '  <div class="col-xs-2">' + track.listeners + '</div>' +
       '</div>';
@@ -34,7 +34,7 @@ Trackster.renderTracks = function(tracks) {
 
 Trackster.searchTracksByTitle = function(title) {
   $.ajax({
-    url: 'https://we.audioscrobbler.com/2.0/?method=track.search&track=' + title + '&api_key=' + API_KEY + '&format=json',
+    url: 'https://ws.audioscrobbler.com/2.0/?method=track.search&track=' + title + '&api_key=' + API_KEY + '&format=json',
     success: function(response) {
       Trackster.renderTracks(response.results.trackmatches.track);
     }
